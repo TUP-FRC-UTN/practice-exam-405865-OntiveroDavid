@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-orders-create',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './orders-create.component.html',
   styleUrl: './orders-create.component.css'
 })

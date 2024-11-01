@@ -1,9 +1,8 @@
 <h1>Create New Order</h1>
-<div>
-    <label for="inputNombre" class="form-label">Nombre: </label>
-    <input type="text" id="inputNombre" class="form-control">
-</div>
-<div>
-    <label for="inputEmail" class="form-label">Email: </label>
-    <input type="email" id="inputEmail" class="form-control">
-</div>
+<label for="inputNombre" class="form-label">Nombre: </label>
+<input type="email" id="inputEmail" class="form-control">
+<form [formGroup]="myForm">
+    <input type="text" formControlName="nombre">
+    <input type="email" formControlName="email">
+    <button type="submit" [disabled]="!myForm.valid">Enviar</button>
+</form>
