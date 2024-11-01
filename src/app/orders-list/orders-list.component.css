@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    margin: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; 
+    text-align: left;
+}
+
+td {
+    word-wrap: break-word;
+    white-space: nowrap;
+    max-width: 100px;
+}
